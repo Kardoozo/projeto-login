@@ -75,12 +75,53 @@ form label{
     display: none;
 }
 
+form > div.campo {
+    position: relative;
+    background-color: #e77801;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+div.campo > span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    display: flex;               /* só dentro do span, para centralizar o ícone */
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: rgb(236, 245, 255);
+    padding: 0;
+}
+
+div.campo > input {
+    position: absolute;
+    left: 40px;
+    right: 0;                    /* estica até a borda direita */
+    top: 0;
+    bottom: 0;
+    width: auto;                 /* deixa left/right mandarem */
+    height: 100%;
+    font-size: 1em;
+    background-color: blanchedalmond;
+    border: 0;
+    border-radius: 8px;
+    padding: 4px 8px;
+    /* apague o transform: translateY */
+}
+
 form > div.campo{
     background-color: #e77801;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 

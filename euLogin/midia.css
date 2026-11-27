@@ -30,26 +30,44 @@ Grandes telas: acima de 1200px
     section#login > div#formulario{
         float: right;
         width: 50%;
-    }
+    } 
 }
 
 @media screen and (min-width:992px) {
 
     body{
-        background-image: linear-gradient(to top, #e77801, #1664b0 80% );
+         background-image: url(../imagens/foto-rua-medio.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+    }
+
+    main{
+         backdrop-filter: blur(10px);
     }
     section#login{
         width: 950px;
     }
 
     section#login > div#imagem{
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
 
     section#login > div#formulario{
-        float: right;
+        float: left;
         width: 50%;
+    }
+
+    div#formulario > h1{
+        font-size:2em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    div#formulario > p{
+        font-size: 1.2em;
+        text-align: center;
     }
 }
